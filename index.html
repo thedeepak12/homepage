@@ -7,27 +7,141 @@
   <title>Homepage</title>
 </head>
 <body>
-  <div id="hero-section" class="flex flex-col ">
-  <div id="head-bg" class="absolute top-[-100px] left-0 w-full h-[1000px] -z-10 bg-[#0891b2] transform skew-y-[-13deg] -translate-y-[412px]"></div>
-  <div id="head-img" class="flex flex-row items-start mt-10 ml-20 gap-6">
-    <div class="inline-block relative max-w-[500px] min-w-[150px] w-full h-auto shadow-[3px_3px_10px_0px_#00000055]">
-      <picture>
-        <img class="w-full h-auto" src="assets/images/deepak.jpg" alt="Profile image">
-      </picture>
-      <div id="overlay-text" class="absolute top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-7xl text-center font-['Playfair_Display'] w-[90%]">Deepak Kumar</div>
+  <header id="hero-section" class="flex flex-col ">
+    <div id="head-bg"
+      class="absolute top-[-100px] left-0 w-full h-[1000px] -z-10 bg-[#0891b2] transform skew-y-[-13deg] -translate-y-[412px]">
     </div>
-    <div id="about-me" class="flex flex-col justify-between bg-white max-w-[630px] min-w-[250px] w-full h-[450px] -ml-7 mt-12 p-6 shadow-[6px_6px_10px_0px_#00000055]">
-      <div id="about-me-text" class="ml-5 mr-5">
-        <h1 id="about-me-title" class="text-[3rem] font-['Playfair_Display']">About me</h1>
-        <div id="about-me-desc" class="text-2xl mt-2 text-gray-700">I'm a tech enthusiast with a passion for understanding how technology shapes the world and solving problems through code. Whether it's understanding how things work or building simple tools, I'm always curious about the logic and structure behind tech.</div>
+    <div id="head-img" class="flex flex-row items-start mt-10 ml-20 gap-6">
+      <div class="inline-block relative max-w-[500px] min-w-[150px] w-full h-auto shadow-[3px_3px_10px_0px_#00000055]">
+        <picture>
+          <img class="w-full h-auto" src="assets/images/deepak.jpg" alt="Profile image" />
+        </picture>
+        <div id="overlay-text"
+          class="absolute top-[90%] left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-7xl text-center font-['Playfair_Display'] w-[90%]">
+          Deepak Kumar
+        </div>
       </div>
-      <div id="about-me-links" class="flex justify-end gap-5 mb-4 mr-10">
-        <a href="https://www.github.com/thedeepak12" target="_blank"><img class="w-8 h-8" src="assets/icons/github.svg" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/thedeepak12" target="_blank"><img class="w-8 h-8" src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
-        <a href="https://www.x.com/thedeepakk12" target="_blank"><img class="w-8 h-8" src="assets/icons/x.svg" alt="X"></a>
+      <div id="about-me"
+        class="flex flex-col justify-between bg-white max-w-[630px] min-w-[250px] w-full h-[450px] -ml-7 mt-12 p-6 shadow-[6px_6px_10px_0px_#00000055]">
+        <div id="about-me-text" class="ml-5 mr-5">
+          <h1 id="about-me-title" class="text-[3rem] font-['Playfair_Display']">About me</h1>
+          <div id="about-me-desc" class="text-2xl mt-2 text-gray-700">
+            I'm a tech enthusiast with a passion for understanding how technology shapes the world and solving problems
+            through code. Whether it's understanding how things work or building simple tools, I'm always curious about
+            the logic and structure behind tech.
+          </div>
+        </div>
+        <div id="about-me-links" class="flex justify-end gap-5 mb-4 mr-10">
+          <a href="https://www.github.com/thedeepak12" target="_blank">
+            <img class="w-8 h-8" src="assets/icons/github.svg" alt="GitHub" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/thedeepak12" target="_blank">
+            <img class="w-8 h-8" src="assets/icons/linkedin.svg" alt="LinkedIn" />
+          </a>
+
+          <a href="https://www.x.com/thedeepakk12" target="_blank">
+            <img class="w-8 h-8" src="assets/icons/x.svg" alt="X" />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </header>
+
+  <section id="project-section" class="bg-white ml-16 mr-16 mb-16">
+    <div class="title text-5xl font-['Playfair_Display'] mt-36 mb-4">My work</div>
+    <div id="project-container" class="grid grid-cols-3 gap-10">
+
+      <div id="project-card" class="shadow-xl">
+        <div id="card-img"><img src="assets/images/battleship.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Battleship</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/battleship" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/battleship/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> A classic Battleship game where players place
+          ships on a grid and take turns attacking the opponent's board to sink all their ships. </div>
+      </div>
+
+      <div id="project-card" class="shadow-xl h-auto">
+        <div id="card-img"><img src="assets/images/weather-app.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Weather App</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/weather-app" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/weather-app/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> A simple and elegant weather forecast app that
+          allows users to search for the current weather in any city using OpenWeatherMap's API. </div>
+      </div>
+
+      <div id="project-card" class="shadow-xl h-auto">
+        <div id="card-img"><img src="assets/images/todo-list.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Todo List</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/todo-list" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/todo-list/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> A Todo List web app that lets users add, delete,
+          and mark tasks as complete. Built for task management and productivity. </div>
+      </div>
+
+      <div id="project-card" class="shadow-xl h-auto">
+        <div id="card-img"><img src="assets/images/restaurant-page.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Restaurant Page</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/restaurant-page" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/restaurant-page/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> This project is a multi-page restaurant website
+          built using JavaScript, HTML, and CSS, bundled with Webpack. </div>
+      </div>
+
+      <div id="project-card" class="shadow-xl h-auto">
+        <div id="card-img"><img src="assets/images/tic-tac-toe.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Tic Tac Toe</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/tic-tac-toe" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/tic-tac-toe/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> This project is an interactive Tic Tac Toe game
+          built with HTML, CSS, and JavaScript. It allows two players to play Tic Tac Toe. </div>
+      </div>
+
+      <div id="project-card" class="shadow-xl h-auto">
+        <div id="card-img"><img src="assets/images/library.png" alt=""></div>
+        <div id="card-info" class="flex justify-between mt-2 ml-7 mr-7">
+          <div id="project-name" class="text-2xl font-['Playfair_Display']">Library</div>
+          <div id="card-icons" class="flex gap-4">
+            <div id="card-icon"><a href="https://github.com/thedeepak12/library" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/github.svg" alt=""></a></div>
+            <div id="card-icon"><a href="https://thedeepak12.github.io/library/" target="_blank"><img
+                  class="w-6 h-6 mt-1" src="assets/icons/open-in-new.svg" alt=""></a></div>
+          </div>
+        </div>
+        <div id="card-desc" class="ml-7 mr-7 mt-4 mb-15 text-gray-700"> A simple Library app to add, display, and manage
+          a personal book collection built using HTML, CSS, and JavaScript. </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
